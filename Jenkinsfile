@@ -19,7 +19,7 @@ pipeline {
     stages {
         stage('code-pull') {
             steps {
-                git 'https://github.com/iam-yuvi/My-Demo-Project.git'
+                git 'https://github.com/iam-yuvi/jenkins-ci-cd-project.git'
             }
         }
 
