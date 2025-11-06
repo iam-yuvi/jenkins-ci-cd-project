@@ -63,7 +63,7 @@ pipeline {
         stage('DEPLOY-TO-EKS') {
             agent {label 'ecr-slave'}
             steps {
-                echo "Deployment step is disabled for now..."
+                echo "Deploying to EKS Cluster"
                 script {
                     withAWS(region: env.AWS_REGION, credentials: 'aws-creds') {
                         echo "Updating kubeconfig for EKS cluster..."
